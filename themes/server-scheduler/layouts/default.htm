@@ -8,9 +8,12 @@ description = "Default layout"
         <title>Server Scheduler - {{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
-        {% partial 'site/head/head-links' %}
-        {% partial 'site/head/head-scripts' %}
-        {% partial 'site/head/analytics-code' %}
+
+        <!-- Main Css -->
+        <link href="assets/libs/@iconscout/unicons/css/line.css" type="text/css" rel="stylesheet">
+        <link href="assets/libs/@mdi/font/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ 'assets/css/tailwind.css'|theme }}">
+
     </head>
     <body class="{{ 'page-'~this.page.id }}">
 
@@ -19,7 +22,6 @@ description = "Default layout"
             {% partial 'site/header' %}
         </header>
 
-        {% partial 'site/flash-messages' %}
 
         <!-- Content -->
         <section id="layout-content">
@@ -31,10 +33,5 @@ description = "Default layout"
             {% partial 'site/footer' %}
         </footer>
 
-        <!-- Mobile -->
-        {% partial 'site/nav-mobile' %}
-
-        <!-- How the page is made -->
-        {% partial 'site/how-its-made' %}
     </body>
 </html>

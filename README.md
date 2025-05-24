@@ -13,7 +13,7 @@ October's mission is to show the world that web development is not rocket scienc
 
 > *Please note*: October is open source but it is not free software. A license with a small fee is required for each website you build with October CMS.
 
-## Installing October
+## Installing Octobers
 
 Instructions on how to install October can be found at the [installation guide](https://docs.octobercms.com/3.x/setup/installation.html).
 
