@@ -90,3 +90,29 @@
     </div><!--end container-->
 </nav><!--end header-->
 <!-- End Navbar -->
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Navbar scroll background
+  
+      var nav = document.getElementById('topnav');
+      if (!nav) {
+        console.error('Navbar with id "topnav" not found!');
+        return;
+      } else {
+        console.log('Navbar found:', nav);
+      }
+      window.addEventListener('scroll', function() {
+        console.log('ScrollY:', window.scrollY);
+        if (window.scrollY > 10) {
+          nav.classList.add('bg-white');
+
+        } else {
+          nav.classList.remove('bg-white');
+        }
+      });
+    });
+  </script>
