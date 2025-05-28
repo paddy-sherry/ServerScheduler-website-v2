@@ -5,7 +5,7 @@ description = "Default layout"
 <html>
     <head>
         {% partial 'site/head/head-meta' %}
-        <title>Server Scheduler - {{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
+        <title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
         <meta name="description" content="{{ this.page.meta_description }}">
         <meta name="title" content="{{ this.page.meta_title }}">
 
@@ -17,7 +17,7 @@ description = "Default layout"
 
         <script src="https://unpkg.com/feather-icons"></script>
         <link rel="icon" type="image/png" href="https://serverscheduler.com/themes/server-scheduler/assets/images/favicon.png">
-        <<script defer data-domain="serverscheduler.com" src="https://plausible.io/js/script.js"></script>
+        <script defer data-domain="serverscheduler.com" src="https://plausible.io/js/script.js"></script>
 
     </head>
     <body class="font-nunito {{ 'page-'~this.page.id }}">

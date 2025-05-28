@@ -148,8 +148,9 @@
     text-decoration: underline dotted;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-size: inherit;
-    font-weight: inherit;
+    //font-size: inherit;
+    //font-weight: inherit;
+    padding-top: 1.5em;
   }
   a {
     color: inherit;
@@ -7974,4 +7975,17 @@ const colors = require('tailwindcss/colors') const plugin = require('tailwindcss
       --tw-divide-x-reverse: 0;
     }
   }
+}
+
+.blog-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
