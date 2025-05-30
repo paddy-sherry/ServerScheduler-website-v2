@@ -7989,3 +7989,8 @@ const colors = require('tailwindcss/colors') const plugin = require('tailwindcss
     font-weight: bold;
     font-size: 20px;
 }
+
+.body-link {
+  cursor: pointer;
+  color: #5039f7;
+}
