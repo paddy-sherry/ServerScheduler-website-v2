@@ -6066,7 +6066,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         li {
           .megamenu-head {
             padding-inline: calc(var(--spacing) * 5) !important;
-            padding-block: 10px !important;
+            
             font-size: var(--text-xs) !important;
             line-height: var(--tw-leading, var(--text-xs--line-height)) !important;
             --tw-font-weight: var(--font-weight-bold) !important;
