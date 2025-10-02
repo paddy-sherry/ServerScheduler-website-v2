@@ -42,7 +42,7 @@ meta_description = "Automatically start and stop your AWS RDS database instances
 
 <section class="relative">
     <div class="container relative max-w-4xl">
-        <i class="fa fa-clock-o" aria-hidden="true"></i> Updated 1st October, 2025
+        <i class="fa fa-clock-o" aria-hidden="true"></i> Updated 3rd October, 2025
         <h2 id="h2-1">How To Start & Stop AWS RDS Databases On A Schedule</h2>
        
 
@@ -63,6 +63,7 @@ meta_description = "Automatically start and stop your AWS RDS database instances
             <li><a href="#h2-5" class="body-link">How to Get Started with Server Scheduler</a></li>
             <li><a href="#h2-6" class="body-link">Can RDS Scale Up On Schedule</a></li>
             <li><a href="#h2-7" class="body-link">What About An RDS Start Stop Lambda Function</a></li>
+            <li><a href="#h2-8" class="body-link">Frequently Asked Questions</a></li>
 
         <h2 id="h2-2">Why Schedule RDS Start & Stop?</h2>
 
@@ -204,6 +205,29 @@ meta_description = "Automatically start and stop your AWS RDS database instances
 
         <h2 id="h2-7">What About An RDS Start Stop Lambda Function</h2>
         <p>You might be asking yourself why wouldn't you simply deploy an RDS start stop Lambda function which does the same thing. That is possible of course but we prefer the simplicity of our UI that we have spent hour researching and crafting to make the best user experience possible. Compare that to a lambda function where it's all too common to hit deployment errors and packages out of date. You'll see the click ops method really is pain free in comparison.</p>
+
+        <h2 id="h2-8">Frequently Asked Questions</h2>
+        <br/>
+        <p class=""><strong>Q: How to stop RDS instance permanently?</strong></p>
+        <p class="">A: Stopping an RDS instance is only temporary (up to 7 days). After that, AWS will automatically restart it. If you want it gone forever, you need to delete the RDS instance </p>
+        <br/>
+
+        <p class=""><strong>Q: Why does my AWS RDS auto start after 7 days?</strong></p>
+        <p class="">A: That’s a built-in AWS behavior that cannot be changed. We suspect it's to generate more money for them! </p>
+        <br/>
+
+        <p class=""><strong>Q: What is AWS instance Scheduler for RDS?</strong></p>
+        <p class="">A: Instance Scheduler is the AWS way to start and stop instances on schedule. It requires cloud formation, tagging and lambdas. Save yourself the hassle and use Server Scheduler instead! </p>
+        <br/>
+
+        <p class=""><strong>Q: In AWS RDS how can I stop replication?</strong></p>
+        <p class="">A: You cannot “pause” replication. The only solution is to delete the read replica. </p>
+        <br/>
+
+
+
+
+
 
         <h2 id="h2-8"> Get Started Today</h2>
 
