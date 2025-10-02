@@ -55,6 +55,7 @@ meta_description = "Automate EC2 instance resizing on schedule with Server Sched
             <li><a href="#h2-9" class="body-link">Real-World Cost Savings</a></li>
             <li><a href="#h2-10" class="body-link">Getting Started with EC2 Resize Scheduling</a></li>
             <li><a href="#h2-11" class="body-link">Can we change EC2 instance type while running</a></li>
+            <li><a href="#h2-12" class="body-link">Frequently Asked Questions</a></li>
            
         </ul>
 
@@ -254,6 +255,27 @@ meta_description = "Automate EC2 instance resizing on schedule with Server Sched
 
         <h2 id="h2-11">Can we change EC2 instance type while running</h2>
         <p>No. Unfortunately instances will be unavailable during the resize. If downtime is not an option, you will need to create a new instance at the desired size and repoint your application to that.</p>
+
+        <h2 id="h2-10">Frequently Asked Questions</h2>
+        <br/>
+        <p><strong>Q: How To add memory to an EC2 instance?</strong></p>
+        <p>A: Memory is tied to the instance type, so the way to increase RAM is by changing the instance type to one with more memory. For a one time change, do it manually in the AWS Dashboard </p>
+        <br/>
+
+        <p><strong>Q: How To Resize EC2 instance on schedule in AWS?</strong></p>
+        <p>A: Connect Server Scheduler to AWS and then choose the time you want your EC2 to be resized </p>
+        <br/>
+
+        <p><strong>Q: How to upgrade EC2 instance OS?</strong></p>
+        <p>A: Upgrading an existing server is possible but we highly recommend creating a new instance with the desired OS version.</p>
+        <br/>
+
+         <p><strong>Q: Can I create a snapshot of EC2 instance?</strong></p>
+        <p>A: In the AWS dashboard, identify the volume(s) attached to your instance and snapshot it. Simple!</p>
+        <br/>
+
+
+        
 
         <div class="mt-6 text-center">
             <a href="https://app.Server Scheduler.com/register" target="_blank" class="py-4 px-8 mx-auto sm:mx-0 inline-block font-semibold tracking-wide border align-middle duration-500 text-base text-center bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 text-white rounded-md">Start Scheduling <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right inline align-middle ms-2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
